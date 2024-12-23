@@ -40,8 +40,8 @@ jobs:
 
       # Step 6: Build the Docker image
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --
+        run: docker build . --file Dockerfile --tag mothish20/testingcicd
 
       # Step 7: Push the Docker image to Docker Hub
       - name: Push the Docker image
-        run: docker push
+        run: docker push mothish20/testingcicd
